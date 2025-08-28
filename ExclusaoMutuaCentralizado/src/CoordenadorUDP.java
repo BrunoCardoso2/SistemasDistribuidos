@@ -1,5 +1,4 @@
 import java.net.*;
-import java.util.*;
 
 public class CoordenadorUDP {
     private static boolean ocupado = false;
@@ -7,7 +6,6 @@ public class CoordenadorUDP {
 
     public static void main(String[] args) throws Exception {
         DatagramSocket socket = new DatagramSocket(5000);
-        Random random = new Random();
 
         // Thread para morrer e reviver a cada 60s
         new Thread(() -> {
