@@ -47,7 +47,7 @@ public class Processo{
                                 InetAddress.getByName(HOST), PORT);
                         try { socket.send(packet); } catch(Exception ex){}
 
-                        // solicita recurso
+                      
                         fila.add(id);
                         System.out.println("Processo " + id + " solicitou recurso");
                         System.out.println("Fila atual: " + fila);
